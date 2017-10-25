@@ -1,0 +1,7 @@
+web:
+  build: .
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - /c/Users/philipealmeida/Code/mds:/srv/www/htdocs
