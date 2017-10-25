@@ -1,4 +1,4 @@
-# docker-redesuas
+# docker-sisc-redesuas
 
 ## Comandos
 - docker-compose up -d
