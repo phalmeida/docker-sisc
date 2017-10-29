@@ -12,6 +12,7 @@ ADD ./config/redesuas-ssl.conf /etc/apache2/vhosts.d/redesuas-ssl.conf
 #Configuração das chaves
 RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl.key/phpit.key -out /etc/apache2/ssl.crt/phpit.crt -subj "/C=AT/ST=Philipe/L=Philipe/O=Security/OU=Development/CN=example.com"
 
+#Ativa o SSL
 RUN a2enmod ssl
 
 #Restarta o apache
